@@ -12,7 +12,9 @@ public class Carte {
         this.anAparitie = anAparitie;
         this.nrPagini = nrPagini;
     }
-
+    public void removeBook(Carte c){
+        carti.remove(c);
+    }
     @Override
     public String toString() {
         return this.titlu+" "+this.autor+ " " + "  publicată în anul "+ this.anAparitie;
